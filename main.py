@@ -125,6 +125,5 @@ i()
 n = int(input())
 k = int(input())
 def i ():
-    z=k%n
-    print(z)
+    print(k%n)
 i()
