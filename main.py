@@ -98,11 +98,7 @@ i()
 11
 x = int(input())
 def i():
-    xx = 2*x
-    xxx = 3*x
-    xxxx = 4*x
-    xxxxx = 5*x
-    print(x,"---", xx,"---", xxx,"---", xxxx,"---", xxxxx)
+    print(x,"---", x*2,"---", x*3,"---", x*4,"---", x*5)
 i()
 
 #12
