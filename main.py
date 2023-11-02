@@ -132,3 +132,15 @@ else:
     print(int(b))
 
 #16
+n = int(input())
+if n % 4 > 0:
+    print(n//4+1)
+if n % 4 == 0:
+    print(n//4)
+
+#17
+a = int(input())
+print(a, "мин - это ", a//60, "час", a%60, "минут.")
+"""
+
+#18
