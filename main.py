@@ -121,3 +121,14 @@ k = int(input())
 def i ():
     print(k%n)
 i()
+
+#15
+a = int(input())
+if a % 2 == 0:
+    v = a/2
+    print(int(v))
+else:
+    b = (a+1)/2
+    print(int(b))
+
+#16
