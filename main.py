@@ -65,7 +65,7 @@ def pp():
     print("Предыдущее за числом ", t, "число ", py)
 pp()
 
-8 Задание
+#8 Задание
 pc = int(input())
 mnt = int(input())
 klv = int(input())
@@ -141,7 +141,6 @@ if n % 4 == 0:
 #17
 a = int(input())
 print(a, "мин - это ", a//60, "час", a%60, "минут.")
-"""
 
 #18
 a = list(input())
@@ -149,3 +148,21 @@ n = int(a[0]) + int(a[1]) + int(a[2])
 n2 = int(a[0]) * int(a[1]) * int(a[2])
 print("Сумма цифр = ", n)
 print("Произведение цифр = ", n2)
+
+#19
+a = list(input())
+n = str(a[0]) + str(a[1]) + str(a[2])
+n2 = str(a[0]) + str(a[2]) + str(a[1])
+n3 = str(a[1]) + str(a[0]) + str(a[2])
+n4 = str(a[1]) + str(a[2]) + str(a[0])
+n5 = str(a[0]) + str(a[1]) + str(a[2])
+n6 = str(a[2]) + str(a[0]) + str(a[1])
+print(n)
+print(n2)
+print(n3)
+print(n4)
+print(n5)
+print(n6)
+
+#20
+
