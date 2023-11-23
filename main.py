@@ -304,7 +304,7 @@ elif a == "синий" and b == "желтый":
 else:
     print("некорректный цвет")
 
-# В этом задании нам нужно определить цвет кармана по вводимому номеру или вывести ошибку ввода если число не в диапазоне 0-36
+#43 В этом задании нам нужно определить цвет кармана по вводимому номеру или вывести ошибку ввода если число не в диапазоне 0-36
 a = int(input("номер кармана\n"))
 if a == 0:
     print("зеленый")
@@ -321,6 +321,8 @@ elif 1 <= a <= 36:
             print("красный")
 else:
     print("ошибка ввода")
+    
+# Дальше идет контрольная
 #1. print()
 #2. Верными строками кода являются:
 #print('Поэма "Мертвые души" одна из самых интересных')
@@ -344,23 +346,278 @@ else:
 #10. Данный код создат прямоугольник из звездочек 17 на 4
 for i in range (4):
     print('*'*17)
-
 #11. Данный код выведет квадрат суммы и сумму квадратов двух чисел
 a = int(input())
 b = int(input())
 print("Квадрат суммы",a,"и",b,"равен",(a+b)**2)
 print("Сумма квадратов",a,"и",b,"равна",a**2+b**2)
-
-12. Данный код выведет значение выражения a^b+c^d
+#12. Данный код выведет значение выражения a^b+c^d
 a = int(input())
 b = int(input())
 c = int(input())
 d = int(input())
 print((a**b)+(c**d))
-
-13. Данный код выведет число в стиле n+nn+nnn
-a = int(input())
-if 1<=a<=9:
-    print(a,a+1,a+2, sep='')
+#13. Данный код выведет число в стиле n+nn+nnn
+n = int(input())
+if 1<=n<=9:
+    print(n,n+1,n+2, sep='')
 else:
     print('Число вне диапозона')
+
+#44 в этом задании нам надо считывать длины двух катетов и выводить площадь треугольника
+a = int(input())
+b = int(input())
+print(1/2*a*b)
+#45 в программе надо узнать через какое время встретятся старушки имея 2 скорости и расстояние в км 
+a  = int(input('v1 '))
+b  = int(input('v2 '))
+c  = int(input('s '))
+v = a+b
+v = c/v
+print(v)
+
+#46 В задаче требовалось вывести обратное число введенному пользователем, если это число ноль то вывести что числа не существует
+a = float(input())
+if a>0:
+    print(1/a)
+else:
+    print("Обратного числа не существует")
+
+#47 Нам требовалось найти температуры по градусам цельсия имея температуру в градусах по Фаренгейту
+a = int(input())
+print((5/9)*(a-32))
+
+#48 Нам требовалось вывести сколько собаке лет по человеческим годам имея готовые формулы
+a = int(input())
+b = 0
+if a > 2:
+    b=b+(10.5*2)
+    a = a - 2
+    b=b + (a*4)
+else:
+    b = a*10.5
+print(b)
+
+#49 Вывести первую точку после запятой
+a = float(input())
+a = a%1
+a = (a*10)//1
+print(a)
+
+#50 Нам требуется вывести дробную часть числа
+a = float(input())
+a = a%1
+print(a)
+
+#51 Вывести наибольшее и наименьшее число из пяти введнных пользователем
+list1 = list()
+min = 999999999
+max = 0
+for i in range(5):
+    a = int(input())
+    list1.append(a)
+for i in list1:
+    if min>i:
+        min = i
+    if max<i:
+        max = i
+print('max = ', max)
+print('min = ', min)
+
+#52 упорядочивание трехзначных чисел от большего к меньшему
+a = int(input())
+b = int(input())
+c = int(input())
+if a > b >c:
+    print(a)
+    print(b)
+    print(c)
+elif a > c >b:
+    print(a)
+    print(c)
+    print(b)
+elif b>a>c:
+    print(b)
+    print(a)
+    print(c)
+elif b>c>a:
+    print(b)
+    print(c)
+    print(a)
+elif c>a>b:
+    print(c)
+    print(a)
+    print(b)
+elif c>b>a:
+    print(c)
+    print(b)
+    print(a)
+
+#53 интересное число, число является интересным если разость максимальной и минимальной цифры равняется средней по величине цифре
+list1=list(input())
+list2= list()
+for i in list1:
+    i = int(i)
+    list2.append(i)
+if list2[0]-list2[2] == list2[1] or list2[2]-list2[0] == list2[1]:
+    print('yes')
+else:
+    print('no')
+
+#54
+a = 0
+w = 0
+b = list()
+while a!=5:
+    c = float(input())
+    b.append(c)
+    a+=1
+for i in b:
+    if i < 0:
+        i = i*(-1)
+    w+=i
+print(w)
+
+#55
+p1 = int(input())
+p2 = int(input())
+q1= int(input())
+q2= int(input())
+w = p1-p2
+d = q1-q2
+if w < 0:
+    w = w*-1
+if d < 0:
+    d = d*-1
+print(w+d)
+
+#56
+print('"Python is a great language", Said Fred. "I don',"'t ever remeber having this much fun before.",'"', sep="")
+
+#57
+a = input()
+b = input()
+print("Hello",a,b,"! You have just delved into Python")
+
+#58
+a = input()
+print("Футбольная команда",a,"имеет длину",len(a),"символов")
+
+#59
+a = input()
+b = input()
+c = input()
+if len(a)>len(b)>len(c) or len(c)>len(b)>len(a):
+    print(a)
+    print(c)
+elif len(a)>len(c)>len(b) or len(b)>len(c)>len(a):
+    print(a)
+    print(b)
+else:
+    print(b)
+    print(c)
+
+#60
+a = input()
+b = input()
+c = input()
+if len(a)+len(b)==len(c) or len(a)+len(c)==len(b) or len(b)+len(c)==len(a):
+    print('yes')
+else:
+    print('no')
+
+18.
+a = input()
+if "синий" in a:
+    print('ПРЕКРАСНЫЙ ДЕНЬ')
+else:
+    print('no')
+
+19.
+a = input()
+if "воскресенье" in a or "суббота" in a:
+    print('ЧИЛИМ')
+else:
+    print('no')
+
+20.
+a = input()
+if "." in a and "@" in a:
+    print('correct')
+else:
+    print('no')
+
+21.
+x1 = float(input())
+x2 = float(input())
+y1 = float(input())
+y2 = float(input())
+a = (((x1-x2)**2)+((y1-y2)**2))**0.5
+print(a)
+
+22.
+import math
+a = float(input())
+print(math.pi*(a**2))
+print((math.pi*2)*a)
+
+23.
+a = float(input())
+b = float(input())
+c = 0.5
+print('Арифметик ',(a+b)/2)
+print('Геометрик ',(a*b)**c)
+print('гармоник ', (a*b*2)/(a+b))
+print('Квадрат', (((a**2)+(b**2))/2)**c)
+
+24.
+import math
+x = float(input())
+sin1 = math.sin(x)
+cos1 = math.cos(x)
+tan1 = math.tan(x)**2
+print('sin x = ', sin1)
+print('cos x = ', cos1)
+print('tan^2 x = ', tan1)
+r = (x*math.pi)/180
+print('r = ',r)
+
+25.
+a = float(input())
+a = abs(a)
+print(a+a)
+
+25(другое решение. В первом перепутал знак со знаком модуля в условии)
+a = float(input())
+b = 0
+if a%1!=0:
+    b = a//1
+    a = a//1+1
+else:
+    b = a
+print(a+b)
+
+26.
+a = float(input())
+b = float(input())
+c = float(input())
+d = ((b**2)-(4*a*c))**0.5
+if d > 0:
+    x1 = ((b*-1)-d)/(2*a)
+    x2 = ((b*-1)+d)/(2*a)
+    if x1>x2:
+        print(x2,x1)
+    else:
+        print(x1,x2)
+elif d == 0:
+    x1 = (b*-1)/(2*a)
+    print(x1)
+else:
+    print('корней нет')
+
+27.
+import math
+a = float(input())
+b = float(input())
+s = (a*(b**2)/(4*math.tan(math.pi/a)))
+print(s)
