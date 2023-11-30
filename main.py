@@ -478,32 +478,32 @@ for i in b:
     w+=i
 print(w)
 
-#55
-p1 = int(input())
-p2 = int(input())
-q1= int(input())
-q2= int(input())
-w = p1-p2
-d = q1-q2
-if w < 0:
-    w = w*-1
-if d < 0:
-    d = d*-1
-print(w+d)
+#55 Манхеттенское расстояние между двумя точками
+p1 = int(input()) # получаем число
+p2 = int(input()) #получаем число
+q1= int(input()) #получаем число
+q2= int(input()) #получаем число
+w = p1-p2 # из первого числа вычитаем второй и вводим в новую переменную
+d = q1-q2 # из первого числа вычитаем второй и вводим в новую переменную
+if w < 0: # если w меньше нуля то выполнить
+    w = w*-1 # w умножить на -1 и получить + число
+if d < 0: # так же как и с w
+    d = d*-1 # так же как и с w
+print(w+d) # вывести w+d
 
-#56
+#56 сделать прикольный текст
 print('"Python is a great language", Said Fred. "I don',"'t ever remeber having this much fun before.",'"', sep="")
 
-#57
+#57 Сделать програму которая получив имя и фамилию выводит приветствие
 a = input()
 b = input()
 print("Hello",a,b,"! You have just delved into Python")
 
-#58
+#58вывести название футбольной команды с количеством символов в слове
 a = input()
 print("Футбольная команда",a,"имеет длину",len(a),"символов")
 
-#59
+#59 Найти самое длинное название города из предоставленных пользователем
 a = input()
 b = input()
 c = input()
@@ -517,7 +517,7 @@ else:
     print(b)
     print(c)
 
-#60
+#60 узнать можно ли из полученных символов получить арифметичекскую прогрессию
 a = input()
 b = input()
 c = input()
@@ -526,28 +526,28 @@ if len(a)+len(b)==len(c) or len(a)+len(c)==len(b) or len(b)+len(c)==len(a):
 else:
     print('no')
 
-18.
+#61 если синий то вывести что день прекрасен в другом случае нет
 a = input()
 if "синий" in a:
     print('ПРЕКРАСНЫЙ ДЕНЬ')
 else:
     print('no')
 
-19.
+#62 если выходной то прикольно
 a = input()
 if "воскресенье" in a or "суббота" in a:
-    print('ЧИЛИМ')
+    print('Отдыхаем')
 else:
     print('no')
 
-20.
+#63 корректный имейл
 a = input()
 if "." in a and "@" in a:
     print('correct')
 else:
     print('no')
 
-21.
+#64 евклидово расстояние формула дана в условии
 x1 = float(input())
 x2 = float(input())
 y1 = float(input())
@@ -555,13 +555,13 @@ y2 = float(input())
 a = (((x1-x2)**2)+((y1-y2)**2))**0.5
 print(a)
 
-22.
+#65 площадь и длина круга
 import math
 a = float(input())
 print(math.pi*(a**2))
 print((math.pi*2)*a)
 
-23.
+#66 средние значения 
 a = float(input())
 b = float(input())
 c = 0.5
@@ -570,7 +570,7 @@ print('Геометрик ',(a*b)**c)
 print('гармоник ', (a*b*2)/(a+b))
 print('Квадрат', (((a**2)+(b**2))/2)**c)
 
-24.
+#67 тригонометрическое выражение по заданному числу x
 import math
 x = float(input())
 sin1 = math.sin(x)
@@ -582,12 +582,7 @@ print('tan^2 x = ', tan1)
 r = (x*math.pi)/180
 print('r = ',r)
 
-25.
-a = float(input())
-a = abs(a)
-print(a+a)
-
-25(другое решение. В первом перепутал знак со знаком модуля в условии)
+#68 задача вычислить значение по заданному вещественному число
 a = float(input())
 b = 0
 if a%1!=0:
@@ -597,7 +592,7 @@ else:
     b = a
 print(a+b)
 
-26.
+#69 даны три числа и нам нужно найти вещественные корни квадратного уравнения
 a = float(input())
 b = float(input())
 c = float(input())
@@ -615,7 +610,7 @@ elif d == 0:
 else:
     print('корней нет')
 
-27.
+#70 Правильный многоугольник  нам нужно найти площаджь многоугольника
 import math
 a = float(input())
 b = float(input())
